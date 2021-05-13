@@ -1,0 +1,4 @@
+EAN;"Eindeutige ID";Lieferzeit/Verfügbarkeit;"Preis in Euro (inkl. MwSt.)";"Versandkosten in Euro";Bestand;Hersteller;"Kategorie im Shop";"Link Produktdetailseite";Produktname;Produktbeschreibung;"URL Produktbild1";"URL Produktbild2";"URL Produktbild3";"URL Produktbild4";"URL Produktbild5";"URL Produktbild6";"URL Produktbild7";"URL Produktbild8";Versandart
+<#list check24List as c24>
+${(c24.ean)!};${(c24.eindeutige_id)!};${(c24.lieferzeit)!};${(c24.preis)!};${(c24.versandkosten)!};${(c24.bestand)!};${(c24.hersteller)!};${(c24.kategorie)!};${(c24.link_produktseite)!};${(c24.produktname)!};${(c24.produktbeschreibung)!};${(c24.url_produktbild1)!};${(c24.url_produktbild2)!};${(c24.url_produktbild3)!};${(c24.url_produktbild4)!};${(c24.url_produktbild5)!};${(c24.url_produktbild6)!};${(c24.url_produktbild7)!};${(c24.url_produktbild8)!};${(c24.versandart)!}
+</#list>

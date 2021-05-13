@@ -1,0 +1,4 @@
+sku,brand,title,categoryPath,url,description,imageUrls,price,deliveryTime,checkout,fulfillmentType,checkoutLimitPerPeriod,eans,deliveryCost_spedition,paymentCosts_cash_in_advance,paymentCosts_paypal,size,colour
+<#list idealoList as il>
+${(il.sku)!},${(il.brand)!},${(il.title)!},${(il.categoryPath)!},${(il.url)!},${(il.description)!},${(il.imageUrls)!},${(il.price)!},${(il.deliveryTime)!},${(il.checkout)!},${(il.fulfillmentType)!},${(il.checkoutLimitPerPeriod)!},${(il.eans)!},${(il.deliveryCost_spedition)!},${(il.paymentCosts_cash_in_advance)!},${(il.paymentCosts_paypal)!},${(il.size)!},${(il.colour)!}
+</#list>

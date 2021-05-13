@@ -1,0 +1,4 @@
+FeedCode;ArticleNumber;BidDesktop;FactorMobile
+<#list moebeldeBiddingFeedList as mbfl>
+PF01110;${(mbfl.articleNumber)!};${(mbfl.bidDesktop)!};${(mbfl.factorMobile)!}
+</#list>

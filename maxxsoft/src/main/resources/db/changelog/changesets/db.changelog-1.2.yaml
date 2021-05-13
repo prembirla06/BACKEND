@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - logicalFilePath: db.changelog-1.2.yaml
+  - changeSet:
+      id: 3.7
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert common Configuration into  Table commonConfiguration
+      changes:              
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "test"
+           - column:
+               name: name
+               value: "test"
+           - column:
+               name: value
+               value: "35"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()   

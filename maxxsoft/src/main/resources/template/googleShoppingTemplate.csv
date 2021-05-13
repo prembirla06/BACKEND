@@ -1,0 +1,4 @@
+id|title|description|link|image_link|availability|price|google_product_category|brand|mpn|condition|adult|shipping|gtin|sale_price|Kennzeichnung_existiert|Benutzerdefiniertes_Label_0|Benutzerdefiniertes_Label_1|Benutzerdefiniertes_Label_2|Benutzerdefiniertes_Label_3|Benutzerdefiniertes_Label_4
+<#list googleShoppingList as gsl>
+${gsl.id}|${gsl.title}|${gsl.description}|${gsl.link}|${gsl.imageLink}|${gsl.availability}|${gsl.price}|${gsl.googleProductCategory}|${gsl.brand}|${gsl.mpn}|${gsl.condition}|${gsl.adult}|${gsl.shipping}|${gsl.gtin}|${gsl.salePrice}|${gsl.identifierExists}|${gsl.customLabel0}|${gsl.customLabel1}|${gsl.customLabel2}|${gsl.customLabel3}|${gsl.customLabel4}
+</#list>

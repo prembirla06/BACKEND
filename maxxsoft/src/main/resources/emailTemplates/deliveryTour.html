@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring boot eamil teplate with Thymeleaf</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+
+    <!-- use the font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+        }
+    </style>
+</head>
+ <body>
+    <p>
+	Lieber <b><span th:text="${customerName}"></span></b>,<br /><br />
+	Ihre Ware von moebel-guenstig24.de wird voraussichtlich am <b><span th:text="${deliveryDateTime}"></span></b> Uhr zugestellt. Unser Fahrer meldet sich 30-60 min vor Ankunft nochmals telefonisch bei Ihnen um den genauen Zeitpunkt der Lieferung zu nennen. Die Zustellung erfolgt bis zur Bordsteinkante. Bitte stellen Sie sicher, dass Sie unter der angegeben Telefonnummer <span th:text="${deliveryPhoneNumber}"></span> erreichbar sind. Sie können uns auch gerne unter info@moebel-guenstig24.de einen Abstellort (Garage, Nachbar etc.) mitteilen, falls Sie nicht vor Ort sein können (ausgenommen Polstermöbel). Wir übernehmen die Haftung bei Abstellung.<br /><br />
+	Wir bedanken uns für Ihre Bestellung und wünschen Ihnen mit dem bestellten Produkt viel Freude!<br /><br />
+    Regards, <br />
+    www.moebel-guenstig24.de<br />
+	TecMaXX GmbH<br />
+	Auf der Sünd 18<br />
+	91757 Treuchtlingen<br /><br />
+	Fax: 09142 200 267<br />
+	E-Mail: info@moebel-guenstig24.de<br /><br />
+	Geschäftsführer: Dipl. Ing. (FH) Maximilian Wüstholz<br />
+	Registergericht: Amtsgericht Ansbach, HRB 4505
+	</p>
+  </body>
+</html>

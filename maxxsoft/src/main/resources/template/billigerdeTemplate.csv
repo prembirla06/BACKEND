@@ -1,0 +1,4 @@
+aid|name|price|link|shop_cat|brand|mpn|gtin|image|dlv_time|dlv_cost|dlv_cost_at|desc|old_price|eek|size|color|material|class|features|style
+<#list billigerdeList as bl>
+${bl.aid}|${bl.name}|${bl.price}|${bl.link}|${bl.shop_cat}|${bl.brand}|${bl.mpn}|${bl.gtin}|${bl.image}|${bl.dlv_time}|${bl.dlv_cost}|${bl.dlv_cost_at}|${bl.desc}|${bl.old_price}|${bl.eek}|${bl.size}|${bl.color}|${bl.material}|${bl.billigerde_class}|${bl.features}|${bl.style}
+</#list>

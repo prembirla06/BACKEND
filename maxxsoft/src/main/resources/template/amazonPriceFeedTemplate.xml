@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope> 
+    <Header> 
+        <DocumentVersion>1.01</DocumentVersion> 
+        <MerchantIdentifier>AHL13GY14NYFE</MerchantIdentifier> 
+    </Header> 
+    <MessageType>Price</MessageType>
+    <PurgeAndReplace>true</PurgeAndReplace>
+    <#list amazonPriceList as apl>
+    <Message>
+        <MessageID>${apl?counter}</MessageID>
+              <Price>
+                 <SKU>${apl.sku}</SKU>
+                 <StandardPrice currency="${apl.currencyPrice}">${apl.standardPrice}</StandardPrice>
+              </Price>
+    </Message>
+    </#list>
+</AmazonEnvelope>

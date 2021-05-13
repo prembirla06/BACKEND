@@ -1,0 +1,465 @@
+databaseChangeLog:
+  - logicalFilePath: db.changelog-1.1.yaml
+  - changeSet:
+      id: 3.1.1
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert common Configuration into  Table commonConfiguration
+      changes:              
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "GoogleShoppingExport_Flag"
+           - column:
+               name: name
+               value: "Google Shopping Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+  - changeSet:
+      id: 3.2
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert common Configuration into  Table commonConfiguration
+      changes:              
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "RealExport_Flag"
+           - column:
+               name: name
+               value: "Real Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "RakutenExport_Flag"
+           - column:
+               name: name
+               value: "Rakuten Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()     
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "MoebeldeExport_Flag"
+           - column:
+               name: name
+               value: "Moebelde Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "IdealoExport_Flag"
+           - column:
+               name: name
+               value: "Idealo Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "GuenstigerdeExport_Flag"
+           - column:
+               name: name
+               value: "Guenstigerde Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "LeGuideExport_Flag"
+           - column:
+               name: name
+               value: "LeGuide Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "ShoppingcomExport_Flag"
+           - column:
+               name: name
+               value: "Shoppingcom Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "SchottenlandExport_Flag"
+           - column:
+               name: name
+               value: "Schottenland Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "BilligerdeExport_Flag"
+           - column:
+               name: name
+               value: "Billigerde Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "Check24Export_Flag"
+           - column:
+               name: name
+               value: "Check24 Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now() 
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "StylightExport_Flag"
+           - column:
+               name: name
+               value: "Stylight Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()   
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "AnzeigenChefExport_Flag"
+           - column:
+               name: name
+               value: "AnzeigenChef Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()   
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "Moebel24deExport_Flag"
+           - column:
+               name: name
+               value: "Moebel24de Export"
+           - column:
+               name: value
+               value: "true"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()   
+  - changeSet:
+      id: 3.3
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert selling platforms into Table sellingPlatform
+      changes:
+       - insert:
+           tableName: sellingPlatform
+           columns:
+           - column:
+               name: name
+               value: "Check24"
+           - column:
+               name: orderNumber
+               value: "4"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()                             
+       - insert:
+           tableName: sellingPlatform
+           columns:
+           - column:
+               name: name
+               value: "Rakuten"
+           - column:
+               name: orderNumber
+               value: "5"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()               
+       - insert:
+           tableName: sellingPlatform
+           columns:
+           - column:
+               name: name
+               value: "Real"
+           - column:
+               name: orderNumber
+               value: "6"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()  
+  - changeSet:
+      id: 3.4.2
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert custom Attributes into Table magentoCustomAttribute
+      changes:
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "url_key"
+           - column:
+               name: orderNumber
+               value: "13"
+           - column:
+               name: type
+               value: "Text Field"   
+  - changeSet:
+      id: 3.5.2
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert custom Attributes into Table magentoCustomAttribute
+      changes:
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "meta_title"
+           - column:
+               name: orderNumber
+               value: "14"
+           - column:
+               name: type
+               value: "Text Field"  
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "meta_keyword"
+           - column:
+               name: orderNumber
+               value: "15"
+           - column:
+               name: type
+               value: "Text Field"  
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "meta_description"
+           - column:
+               name: orderNumber
+               value: "16"
+           - column:
+               name: type
+               value: "Text Field"  
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "special_price"
+           - column:
+               name: orderNumber
+               value: "17"
+           - column:
+               name: type
+               value: "Text Field"
+  - changeSet:
+      id: 3.6
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert custom Attributes into Table magentoCustomAttribute
+      changes:
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "ms_special_price_type"
+           - column:
+               name: orderNumber
+               value: "19"
+           - column:
+               name: type
+               value: "Text Field"     
+  - changeSet:
+      id: 3.7
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert common Configuration into  Table commonConfiguration
+      changes:              
+       - insert:
+           tableName: commonConfiguration
+           columns:
+           - column:
+               name: configKey
+               value: "Supplier_Default_Delivery_Time"
+           - column:
+               name: name
+               value: "Supplier Default Delivery Time"
+           - column:
+               name: value
+               value: "35"
+           - column:
+               name: createdAt
+               valueDate: now()
+           - column:
+               name: updatedAt
+               valueDate: now()   
+  - changeSet:
+      id: 3.8
+      author: Mahinga
+      preConditions:
+        - onFail: MARK_RAN
+      runOnChange: true
+      comment: Insert custom Attributes into Table magentoCustomAttribute
+      changes:
+       - insert:
+           tableName: magentoCustomAttribute
+           columns:
+           - column:
+               name: attributeName
+               value: "ms_googleshopping_gtin_date"
+           - column:
+               name: orderNumber
+               value: "20"
+           - column:
+               name: type
+               value: "Date"                                                                                                                                                                                                                                                                                                                                               

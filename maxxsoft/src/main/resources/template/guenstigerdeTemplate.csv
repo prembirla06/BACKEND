@@ -1,0 +1,4 @@
+Bestellnummer;HerstellerArtNr;Hersteller;ProduktBezeichnung;ProduktBeschreibung;Preis;Lieferzeit;ProduktLink;FotoLink;EANCode;Kategorie;Gewicht;VersandVorkasse;VersandPayPal;VersandKreditkarte;VersandLastschrift;VersandRechnung;VersandNachnahme;Grundpreis komplett;Energieeffizienzklasse;Keyword;Farbe;Groesse;Geschlecht;Erwachsene / Kind;PZN;Reifentyp;Reifensaison;Reifenmass
+<#list guenstigerdeList as gl>
+${gl.bestellnummer};${gl.herstellerArtNr};${gl.hersteller};${gl.produktBezeichnung};${gl.produktBeschreibung};${gl.preis};${gl.lieferzeit};${gl.produktLink};${gl.fotoLink};${gl.eanCode};${gl.kategorie};;;${gl.versandPayPal};${gl.versandKreditkarte};${gl.versandLastschrift};${gl.versandRechnung};;;${gl.energieeffizienzklasse};;${gl.farbe};;;;;;;;
+</#list>

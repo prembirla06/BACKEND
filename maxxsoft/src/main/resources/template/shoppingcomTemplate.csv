@@ -1,0 +1,4 @@
+Eindeutige Haendler-SKU;Preis;Produkt-URL;Produktbild-URL;Produktname;Zustand;ean;eek;farbe;hersteller;kategoriename;produktbeschreibung;produkttyp;style;Versandkosten;Verfuegbarkeit;SKU Gebot
+<#list shoppingcomList as scl>
+${scl.haendler_sku};${scl.preis};${scl.produkt_url};${scl.produktbild_url};${scl.produktname};${scl.zustand};${scl.ean};${scl. eek};${scl.farbe};${scl.hersteller};${scl.kategoriename};${scl.produktbeschreibung};${scl.produkttyp};${scl.style};${scl.versandkosten};${scl.verfuegbarkeit};${scl.skuGebot}
+</#list>

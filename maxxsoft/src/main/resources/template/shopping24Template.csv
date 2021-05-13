@@ -1,0 +1,4 @@
+Name|SKU_ID|Master_SKU_ID|Price|Alternate_Price|Tax|Delivery_Cost|Delivery_Time|Category_Path|Description|Product_URL|Clean_URL|Color|Material|Length|Width|Height|Product_Image_URL_1|Product_Image_URL_2|Product_Image_URL_3|Product_Image_URL_4|Product_Image_URL_5|EAN|Brand|CPC_Desktop|Availability
+<#list moebel24deList as m24>
+${(m24.name)!}|${(m24.sku_id)!}|${(m24.master_sku_id)!}|${(m24.price)!}|${(m24.alternate_price)!}|${(m24.tax)!}|${(m24.delivery_cost)!}|${(m24.delivery_time)!}|${(m24.category_path)!}|${(m24.description)!}|${(m24.product_url)!}|${(m24.clean_url)!}|${(m24.color)!}|${(m24.material)!}|${(m24.length)!}|${(m24.width)!}|${(m24.height)!}|${(m24.product_image_url_1)!}|${(m24.product_image_url_2)!}|${(m24.product_image_url_3)!}|${(m24.product_image_url_4)!}|${(m24.product_image_url_5)!}|${(m24.ean)!}|${(m24.brand)!}|${(m24.cpc)!}|${(m24.availability)!}
+</#list>

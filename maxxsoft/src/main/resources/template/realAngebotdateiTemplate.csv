@@ -1,0 +1,4 @@
+ean;condition;price;comment;offer_id;location;warehouse;count;delivery_time_min;delivery_time_max;minimum_price;price_cs;minimum_price_cs;shipping_group
+<#list realAngebotdateiList as ral>
+${ral.ean};${ral.condition};${ral.price};${ral.comment};${ral.offerId};${ral.location};${ral.warehouse};${ral.count};${ral.deliveryTimeMin};${ral.deliveryTimeMax};${ral.minimumPrice};${ral.priceCs};${ral.minimumPriceCs};${ral.shippingGroup}
+</#list>

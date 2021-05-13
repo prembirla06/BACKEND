@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope> 
+    <Header> 
+        <DocumentVersion>1.01</DocumentVersion> 
+        <MerchantIdentifier>AHL13GY14NYFE</MerchantIdentifier> 
+    </Header> 
+    <MessageType>ProductImage</MessageType>
+    <#list amazonProductImageList as apil>
+    <Message>
+        <MessageID>${apil?counter}</MessageID>
+        <OperationType>Update</OperationType> 
+              <ProductImage>
+                 <SKU>${apil.sku}</SKU>
+                 <ImageType>${apil.imageType}</ImageType>
+                 <ImageLocation>${apil.imageLocation}</ImageLocation>
+              </ProductImage>
+    </Message>
+    </#list>
+</AmazonEnvelope>

@@ -1,0 +1,4 @@
+id;artikelnummer;produktname;preis;versandgruppe;mwst_klasse;lieferzeit;produkt_bestellbar;sichtbar;beschreibung;kategorien;bild1
+<#list rakutenList as rl>
+${rl.id};${rl.artikelnummer};${rl.produktname};${rl.preis};${rl.versandgruppe};${rl.mwstKlasse};${rl.lieferzeit};${rl.produktBestellbar};${rl.sichtbar};${rl.beschreibung};${rl.kategorie};${rl.bild1}
+</#list>

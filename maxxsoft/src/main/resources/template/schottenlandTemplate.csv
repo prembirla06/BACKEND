@@ -1,0 +1,4 @@
+AAN;Produktname;Produktpreis;Deeplink;Deeplink mobile Webseite;EAN;Hersteller;Lieferzeit;Versandkosten Vorkasse;Versandkosten Kreditkarte;Versandkosten Lastschrift;Versandkosten Rechnung;Versandkosten PayPal;Energieeffizienzklasse;Produktbild;HAN;Artikelbeschreibung;Warenkorb-Link;Warenkorb-Link mobile Webseite;Kategorie
+<#list schottenlandList as sl>
+${sl.aan};${sl.produktname};${sl.produktpreis};${sl.deeplink};${sl.deeplink_mobile};${sl.ean};${sl.hersteller};${sl.lieferzeit};${sl.versandkosten_vorkasse};${sl.versandkosten_kreditkarte};${sl.versandkosten_lastschrift};${sl.versandkosten_rechnung};${sl.versandkosten_paypal};${sl.energieeffizienzklasse};${sl.produktbild};${sl.han};${sl.artikelbeschreibung};${sl.warenkorb_link};${sl.warenkorb_link_mobile};${sl.kategorie}
+</#list>

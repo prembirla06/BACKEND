@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope> 
+    <Header> 
+        <DocumentVersion>1.01</DocumentVersion> 
+        <MerchantIdentifier>AHL13GY14NYFE</MerchantIdentifier> 
+    </Header> 
+    <MessageType>Product</MessageType>
+    <!--<PurgeAndReplace>true</PurgeAndReplace>-->
+    <#list amazonProductList as aprl>
+    <Message>
+        <MessageID>${aprl?counter}</MessageID>
+        <OperationType>Update</OperationType>
+        <Product>
+        	<SKU>${aprl.sku}</SKU>
+        		<StandardProductID>
+        			<Type>EAN</Type>
+        			<Value>${aprl.standardProductID}</Value> 
+        		</StandardProductID>
+            <LaunchDate>${aprl.launchDate?datetime?iso_utc}</LaunchDate>
+            <Condition>
+            <ConditionType>${aprl.condition}</ConditionType>
+            </Condition> 
+        <DescriptionData>
+        <Title>${aprl.title}</Title>
+        <Brand>${aprl.brand}</Brand>
+        <Description>${aprl.description}</Description>
+        <#if aprl.bulletPoint1??>
+        <BulletPoint>${aprl.bulletPoint1}</BulletPoint>
+        </#if>
+        <#if aprl.bulletPoint2??>
+        <BulletPoint>${aprl.bulletPoint2}</BulletPoint>
+        </#if>
+        <#if aprl.bulletPoint3??>
+        <BulletPoint>${aprl.bulletPoint3}</BulletPoint>
+        </#if>
+        <#if aprl.bulletPoint4??>
+        <BulletPoint>${aprl.bulletPoint4}</BulletPoint>
+        </#if>
+        <#if aprl.bulletPoint5??>
+        <BulletPoint>${aprl.bulletPoint5}</BulletPoint>
+        </#if>
+        <Manufacturer>${aprl.manufacturer}</Manufacturer>
+        <RecommendedBrowseNode>${aprl.recommendedBrowseNode1}</RecommendedBrowseNode>
+        <#if aprl.recommendedBrowseNode2??>
+        <RecommendedBrowseNode>${aprl.recommendedBrowseNode2}</RecommendedBrowseNode>
+        </#if>
+        <#if aprl.recommendedBrowseNode3??>
+        <RecommendedBrowseNode>${aprl.recommendedBrowseNode3}</RecommendedBrowseNode>
+        </#if>
+    </DescriptionData>
+    <ProductData>
+    <Home>
+    <ProductType>
+    <FurnitureAndDecor>
+    </FurnitureAndDecor>
+    </ProductType>
+    </Home>
+    </ProductData>
+    </Product>
+    </Message>
+    </#list>
+</AmazonEnvelope>

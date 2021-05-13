@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope> 
+    <Header> 
+        <DocumentVersion>1.01</DocumentVersion> 
+        <MerchantIdentifier>AHL13GY14NYFE</MerchantIdentifier> 
+    </Header> 
+    <MessageType>Inventory</MessageType>
+    <#list amazonInvenoryList as ail>
+    <Message>
+        <MessageID>${ail?counter}</MessageID>
+              <Inventory>
+                 <SKU>${ail.sku}</SKU>
+                 <Quantity>${ail.quantity}</Quantity>
+                 <FulfillmentLatency>${ail.fulfillmentLatency}</FulfillmentLatency>
+              </Inventory>
+    </Message>
+    </#list>
+</AmazonEnvelope>

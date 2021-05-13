@@ -1,0 +1,4 @@
+ean;category;title;description;picture;picture;picture;picture;manufacturer;short_description;width;decor;energy_efficiency_class;energylabel;colour;mpn;height;depth;additional_categories;material_composition
+<#list realProduktdateiList as rpl>
+${rpl.ean};${rpl.category};${rpl.title};${rpl.description};${rpl.picture1};${rpl.picture2};${rpl.picture3};${rpl.picture4};${rpl.manufacturer};${rpl.short_description};${rpl.width};${rpl.decor};${rpl.energy_efficiency_class};${rpl.energylabel};${rpl.colour};${rpl.mpn};${rpl.height};${rpl.depth};${rpl.additional_categories};${rpl.material_composition}
+</#list>

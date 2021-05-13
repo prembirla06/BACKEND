@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmazonEnvelope> 
+    <Header> 
+        <DocumentVersion>1.01</DocumentVersion> 
+        <MerchantIdentifier>AHL13GY14NYFE</MerchantIdentifier> 
+    </Header> 
+    <MessageType>Product</MessageType>
+    <#list amazonProductList as aprl>
+    <Message>
+        <MessageID>${aprl?counter}</MessageID>
+        <OperationType>Update</OperationType>
+        <Product>
+        	<SKU>${aprl.sku}</SKU>
+        		<StandardProductID>
+        			<Type>ASIN</Type>
+        			<Value>${aprl.standardProductID}</Value> 
+        		</StandardProductID>
+            <Condition>
+            <ConditionType>${aprl.condition}</ConditionType>
+            </Condition> 
+    </Product>
+    </Message>
+    </#list>
+</AmazonEnvelope>

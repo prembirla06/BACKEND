@@ -1,0 +1,4 @@
+Kategorie;Produkt-ID;Titel;Beschreibung;Preis;Produkt-URL;Endgueltige URL;Bild-URL;EAN;Versandkosten;Verfuegbarkeit;Lieferzeit;Garantie;Produktreferenz;Marke;MPN;Streichpreis;Farbe;Groeﬂe;Material;Waehrung;Gebrauchtware;Sonderangebot;Handy-URL;Grundpreis
+<#list leGuideList as lgl>
+${lgl.kategorie};${lgl.product_id};${lgl.titel};${lgl.beschreibung};${lgl.preis};${lgl.product_URL};${lgl.landing_page_URL};${lgl.bild_URL};${lgl.ean};${lgl.versandkosten};${lgl.verfuegbarkeit};${lgl.lieferzeit};${lgl.garantie};${lgl.produktreferenz};${lgl.marke};${lgl.mpn};${lgl.streichpreis};${lgl.farbe};${lgl.groesse};${lgl.material};${lgl.waehrung};${lgl.gebrauchtware};${lgl.sonderangebot};${lgl.handy_URL};
+</#list>

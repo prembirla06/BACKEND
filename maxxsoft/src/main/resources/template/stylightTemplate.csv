@@ -1,0 +1,4 @@
+name;desc;price;MSRP;currency;dimensions;category;shipping cost;images_url;gender;brand;product_url;GTIN;product_id;item_group_id;age_group;fabric;color;Availability;Pattern;Style;CPC bid Desktop;CPC bid Mobile;CPC bid Tablet
+<#list stylightList as sl>
+${(sl.name)!};${(sl.desc)!};${(sl.price)!};${(sl.msrp)!};${(sl.currency)!};${(sl.dimension)!};${(sl.category)!};${(sl.shipping_cost)!};${(sl.images_url)!};${(sl.gender)!};${(sl.brand)!};${(sl.product_url)!};${(sl.GTIN)!};${(sl.product_id)!};${(sl.item_group_id)!};${(sl.age_group)!};${(sl.fabric)!};${(sl.color)!};${(sl.availability)!};${(sl.pattern)!};${(sl.stype)!};${(sl.cpc_bid_desktop)!};${(sl.cpc_bid_mobile)!};${(sl.cpc_bid_tabled)!}
+</#list>
